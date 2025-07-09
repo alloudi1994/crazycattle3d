@@ -1,0 +1,43 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://crazycattle3d-a68.pages.dev/sitemap.xml
+
+# Custom Rules
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /signup/
+Disallow: /user/
+Disallow: /private/
+
+Sitemap: https://crazycattle3d.com/sitemap.xml
+
+# SEO Optimization
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot  
+Allow: /
+
+User-agent: *
+Crawl-delay: 1
+
+# Block access to admin and API endpoints
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_astro/
+
+# Allow access to images and assets
+User-agent: *
+Allow: /thumbnail/
+Allow: /images/
+Allow: /assets/
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.css$
+Allow: /*.js$
