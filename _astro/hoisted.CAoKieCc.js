@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){const o=document.getElementById("go-to-top");function t(){window.scrollY>300?o.classList.add("show"):o.classList.remove("show")}function n(){window.scrollTo({top:0,behavior:"smooth"})}window.addEventListener("scroll",t),o.addEventListener("click",n),t()});
